@@ -27,9 +27,9 @@ namespace TemplateGame
         public Clear(Selector sys) : base(sys){
             //  画像読み込み
             //  カレントディレクトリは、bin/debugフォルダなので1つ上にたどってから
-            //  resources フォルダからsmilie.gif ファイルを読む
+            //  Media フォルダから画像 ファイルを読む
             string cwd  = System.IO.Directory.GetCurrentDirectory();
-            string path = System.IO.Directory.GetParent(cwd)+"\\resources\\Clear.png";
+            string path = System.IO.Directory.GetParent(cwd)+"\\..\\Media\\Clear.png";
             mTex = new BitmapImage(new Uri(path));        
             mPhase = CLEARPHASE.INIT;
             mFade = 0;

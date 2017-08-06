@@ -29,10 +29,10 @@ namespace TemplateGame
         bool        mKeyFlag;
         public Title(Selector sys) : base(sys){
             //  画像読み込み
-            //  カレントディレクトリは、bin/debugフォルダなので1つ上にたどってから
-            //  resources フォルダからsmilie.gif ファイルを読む
+            //  カレントディレクトリは、bin/debugフォルダなので2つ上にたどってから
+            //  Media フォルダから画像 ファイルを読む
             string cwd  = System.IO.Directory.GetCurrentDirectory();
-            string path = System.IO.Directory.GetParent(cwd)+"\\resources\\title.png";
+            string path = System.IO.Directory.GetParent(cwd)+"\\..\\Media\\title.png";
             mTex = new BitmapImage(new Uri(path));        
             mPhase = TITLEPHASE.INIT;
             mFreq = 120;

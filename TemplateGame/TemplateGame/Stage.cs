@@ -20,9 +20,9 @@ namespace TemplateGame
         public Stage(Selector sys) : base(sys){
             //  画像読み込み
             //  カレントディレクトリは、bin/debugフォルダなので1つ上にたどってから
-            //  resources フォルダからsmilie.gif ファイルを読む
+            //  Media フォルダから画像ファイルを読む
             string cwd  = System.IO.Directory.GetCurrentDirectory();
-            string path = System.IO.Directory.GetParent(cwd)+"\\resources\\trump.gif";
+            string path = System.IO.Directory.GetParent(cwd)+"\\..\\Media\\trump.gif";
             mTex = new BitmapImage(new Uri(path));    
             mObjects = new List<GameObject>();
 

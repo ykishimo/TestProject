@@ -27,9 +27,9 @@ namespace TemplateGame
         public GameOver(Selector sys) : base(sys){
             //  画像読み込み
             //  カレントディレクトリは、bin/debugフォルダなので1つ上にたどってから
-            //  resources フォルダからsmilie.gif ファイルを読む
+            //  Media フォルダから画像ファイルを読む
             string cwd  = System.IO.Directory.GetCurrentDirectory();
-            string path = System.IO.Directory.GetParent(cwd)+"\\resources\\GameOver.png";
+            string path = System.IO.Directory.GetParent(cwd)+"\\..\\Media\\GameOver.png";
             mTex = new BitmapImage(new Uri(path));        
             mPhase = GAMEOVERPHASE.INIT;
             mFade = 0;
