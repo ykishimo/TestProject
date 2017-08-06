@@ -33,7 +33,7 @@ namespace TemplateGame
             mTex = new BitmapImage(new Uri(path));        
             mPhase = CLEARPHASE.INIT;
             mFade = 0;
-            mLifetime = 180;
+            mLifetime = 140;
         }
         public override SCENERESULT move(){
             switch (mPhase){
